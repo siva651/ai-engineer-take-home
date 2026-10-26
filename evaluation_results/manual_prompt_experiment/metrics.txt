@@ -1,0 +1,24 @@
+
+Original prompt
+  report_01.pdf: 5/14 exact rows; F1=0.357
+  report_02.pdf: 5/16 exact rows; F1=0.312
+  report_03.pdf: 0/8 exact rows; F1=0.000
+  report_05.pdf: 6/14 exact rows; F1=0.429
+  report_06.pdf: 0/12 exact rows; F1=0.000
+  report_08.jpg: 0/6 exact rows; F1=0.000
+  report_09.jpg: 7/14 exact rows; F1=0.500
+  TOTAL: exact rows 23/84; P=0.274 R=0.274 F1=0.274; unique reports=7
+  Field accuracy by position: test_name=34/84 (40.5%), value=74/84 (88.1%), unit=73/84 (86.9%), reference_range=80/84 (95.2%)
+
+Revised prompt
+  report_01.pdf: 13/14 exact rows; F1=0.929
+  report_02.pdf: 14/16 exact rows; F1=0.875
+  report_03.pdf: 7/8 exact rows; F1=0.875
+  report_05.pdf: 14/14 exact rows; F1=1.000
+  report_06.pdf: 7/12 exact rows; F1=0.583
+  report_08.jpg: 6/6 exact rows; F1=1.000
+  report_09.jpg: 14/14 exact rows; F1=1.000
+  TOTAL: exact rows 75/84; P=0.893 R=0.893 F1=0.893; unique reports=7
+  Field accuracy by position: test_name=83/84 (98.8%), value=83/84 (98.8%), unit=77/84 (91.7%), reference_range=79/84 (94.0%)
+
+Coverage caveat: both supplied exports duplicate report_09.jpg and omit report_11.pdf.

@@ -1,0 +1,740 @@
+report_01.pdf
+{
+"tests": [
+{
+"test_name": "Hemoglobin",
+"value": 13.5,
+"unit": "g/dL",
+"reference_range": "13.0-17.0",
+"status": "normal"
+},
+{
+"test_name": "Red Blood Cell Count",
+"value": 5.71,
+"unit": "mill/cumm",
+"reference_range": "4.50-5.50",
+"status": "high"
+},
+{
+"test_name": "Packed Cell Volume",
+"value": 48.8,
+"unit": "%",
+"reference_range": "40.0-50.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Volume",
+"value": 77.9,
+"unit": "fL",
+"reference_range": "83.0-101.0",
+"status": "low"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin",
+"value": 27.9,
+"unit": "pg",
+"reference_range": "27.0-32.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin Concentration",
+"value": 34.2,
+"unit": "g/dL",
+"reference_range": "31.5-34.5",
+"status": "normal"
+},
+{
+"test_name": "Red Cell Distribution Width",
+"value": 12.2,
+"unit": "%",
+"reference_range": "11.6-14.0",
+"status": "normal"
+},
+{
+"test_name": "White Blood Cell Count",
+"value": 9200.0,
+"unit": "/cumm",
+"reference_range": "4000-10000",
+"status": "normal"
+},
+{
+"test_name": "Neutrophils",
+"value": 73.0,
+"unit": "%",
+"reference_range": "40-80",
+"status": "normal"
+},
+{
+"test_name": "Lymphocytes",
+"value": 33.0,
+"unit": "%",
+"reference_range": "20-40",
+"status": "normal"
+},
+{
+"test_name": "Eosinophils",
+"value": 0.0,
+"unit": "%",
+"reference_range": "1-6",
+"status": "low"
+},
+{
+"test_name": "Monocytes",
+"value": 8.0,
+"unit": "%",
+"reference_range": "2-10",
+"status": "normal"
+},
+{
+"test_name": "Basophils",
+"value": 1.0,
+"unit": "%",
+"reference_range": "0-2",
+"status": "normal"
+},
+{
+"test_name": "Platelet Count",
+"value": 340000.0,
+"unit": "/cumm",
+"reference_range": "150000-410000",
+"status": "normal"
+}
+]
+}
+
+
+report_02.pdf
+{
+"tests": [
+{
+"test_name": "Total Cholesterol",
+"value": 179.0,
+"unit": "mg/dL",
+"reference_range": "< 200",
+"status": "normal"
+},
+{
+"test_name": "Triglycerides",
+"value": 91.0,
+"unit": "mg/dL",
+"reference_range": "< 150",
+"status": "normal"
+},
+{
+"test_name": "HDL Cholesterol",
+"value": 36.0,
+"unit": "mg/dL",
+"reference_range": "> 40",
+"status": "low"
+},
+{
+"test_name": "LDL Cholesterol",
+"value": 121.0,
+"unit": "mg/dL",
+"reference_range": "< 100",
+"status": "high"
+},
+{
+"test_name": "VLDL Cholesterol",
+"value": 21.0,
+"unit": "mg/dL",
+"reference_range": "< 30",
+"status": "normal"
+},
+{
+"test_name": "TC/HDL Ratio",
+"value": 5.6,
+"unit": "",
+"reference_range": "< 5.0",
+"status": "high"
+},
+{
+"test_name": "Total Bilirubin",
+"value": 1.06,
+"unit": "mg/dL",
+"reference_range": "0.30-1.20",
+"status": "normal"
+},
+{
+"test_name": "Direct Bilirubin",
+"value": 0.20,
+"unit": "mg/dL",
+"reference_range": "0.00-0.30",
+"status": "normal"
+},
+{
+"test_name": "Indirect Bilirubin",
+"value": 0.44,
+"unit": "mg/dL",
+"reference_range": "0.20-0.90",
+"status": "normal"
+},
+{
+"test_name": "Aspartate Aminotransferase",
+"value": 50.0,
+"unit": "U/L",
+"reference_range": "5-40",
+"status": "high"
+},
+{
+"test_name": "Alanine Aminotransferase",
+"value": 2.0,
+"unit": "U/L",
+"reference_range": "5-45",
+"status": "low"
+},
+{
+"test_name": "Alkaline Phosphatase",
+"value": 118.0,
+"unit": "U/L",
+"reference_range": "40-129",
+"status": "normal"
+},
+{
+"test_name": "Total Protein",
+"value": 7.1,
+"unit": "g/dL",
+"reference_range": "6.4-8.3",
+"status": "normal"
+},
+{
+"test_name": "Albumin",
+"value": 4.9,
+"unit": "g/dL",
+"reference_range": "3.5-5.2",
+"status": "normal"
+},
+{
+"test_name": "Globulin",
+"value": 2.5,
+"unit": "g/dL",
+"reference_range": "2.0-3.5",
+"status": "normal"
+},
+{
+"test_name": "Albumin/Globulin Ratio",
+"value": 2.3,
+"unit": "",
+"reference_range": "1.0-2.1",
+"status": "high"
+}
+]
+}
+
+
+report_03.pdf
+{
+"tests": [
+{
+"test_name": "Triiodothyronine (T3)",
+"value": 179.0,
+"unit": "ng/dL",
+"reference_range": "80-200",
+"status": "normal"
+},
+{
+"test_name": "Thyroxine (T4)",
+"value": 10.9,
+"unit": "ug/dL",
+"reference_range": "4.5-12.0",
+"status": "normal"
+},
+{
+"test_name": "Thyroid Stimulating Hormone",
+"value": 2.49,
+"unit": "uIU/mL",
+"reference_range": "0.27-4.20",
+"status": "normal"
+},
+{
+"test_name": "Vitamin D",
+"value": 58.9,
+"unit": "ng/mL",
+"reference_range": "30.0-100.0",
+"status": "normal"
+},
+{
+"test_name": "Vitamin B12",
+"value": 359.0,
+"unit": "pg/mL",
+"reference_range": "197-771",
+"status": "normal"
+},
+{
+"test_name": "Glycated Hemoglobin",
+"value": 6.0,
+"unit": "%",
+"reference_range": "4.0-5.6",
+"status": "high"
+},
+{
+"test_name": "Fasting Blood Sugar",
+"value": 88.0,
+"unit": "mg/dL",
+"reference_range": "70-100",
+"status": "normal"
+},
+{
+"test_name": "Postprandial Blood Sugar",
+"value": 95.0,
+"unit": "mg/dL",
+"reference_range": "70-140",
+"status": "normal"
+}
+]
+}
+
+
+report_05.pdf
+{
+"tests": [
+{
+"test_name": "Hemoglobin",
+"value": 11.9,
+"unit": "g/dL",
+"reference_range": "13.0-17.0",
+"status": "low"
+},
+{
+"test_name": "Red Blood Cell Count",
+"value": 5.83,
+"unit": "mill/cumm",
+"reference_range": "4.50-5.50",
+"status": "high"
+},
+{
+"test_name": "Packed Cell Volume",
+"value": 45.9,
+"unit": "%",
+"reference_range": "40.0-50.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Volume",
+"value": 94.9,
+"unit": "fL",
+"reference_range": "83.0-101.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin",
+"value": 28.3,
+"unit": "pg",
+"reference_range": "27.0-32.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin Concentration",
+"value": 33.5,
+"unit": "g/dL",
+"reference_range": "31.5-34.5",
+"status": "normal"
+},
+{
+"test_name": "Red Cell Distribution Width",
+"value": 13.6,
+"unit": "%",
+"reference_range": "11.6-14.0",
+"status": "normal"
+},
+{
+"test_name": "White Blood Cell Count",
+"value": 2800.0,
+"unit": "/cumm",
+"reference_range": "4000-10000",
+"status": "low"
+},
+{
+"test_name": "Neutrophils",
+"value": 32.0,
+"unit": "%",
+"reference_range": "40-80",
+"status": "low"
+},
+{
+"test_name": "Lymphocytes",
+"value": 16.0,
+"unit": "%",
+"reference_range": "20-40",
+"status": "low"
+},
+{
+"test_name": "Eosinophils",
+"value": 5.0,
+"unit": "%",
+"reference_range": "1-6",
+"status": "normal"
+},
+{
+"test_name": "Monocytes",
+"value": 6.0,
+"unit": "%",
+"reference_range": "2-10",
+"status": "normal"
+},
+{
+"test_name": "Basophils",
+"value": 2.0,
+"unit": "%",
+"reference_range": "0-2",
+"status": "normal"
+},
+{
+"test_name": "Platelet Count",
+"value": 3.03,
+"unit": "lakh/cumm",
+"reference_range": "1.50-4.10",
+"status": "normal"
+}
+]
+}
+
+
+report_06.pdf
+{
+"tests": [
+{
+"test_name": "Urine Colour",
+"value": 0.0,
+"unit": "",
+"reference_range": "Pale Yellow",
+"status": "normal"
+},
+{
+"test_name": "Urine Clarity",
+"value": 0.0,
+"unit": "",
+"reference_range": "Clear",
+"status": "normal"
+},
+{
+"test_name": "pH",
+"value": 6.5,
+"unit": "",
+"reference_range": "5.0-8.0",
+"status": "normal"
+},
+{
+"test_name": "Specific Gravity",
+"value": 1.020,
+"unit": "",
+"reference_range": "1.005-1.030",
+"status": "normal"
+},
+{
+"test_name": "Albumin",
+"value": 0.0,
+"unit": "",
+"reference_range": "Negative",
+"status": "normal"
+},
+{
+"test_name": "Sugar",
+"value": 1.0,
+"unit": "",
+"reference_range": "Negative",
+"status": "high"
+},
+{
+"test_name": "Ketones",
+"value": 0.0,
+"unit": "",
+"reference_range": "Negative",
+"status": "normal"
+},
+{
+"test_name": "Leucocytes",
+"value": 2.5,
+"unit": "/hpf",
+"reference_range": "0-5",
+"status": "normal"
+},
+{
+"test_name": "Erythrocytes",
+"value": 1.5,
+"unit": "/hpf",
+"reference_range": "0",
+"status": "high"
+},
+{
+"test_name": "Squamous Epithelial Cells",
+"value": 1.5,
+"unit": "/hpt",
+"reference_range": "0-5",
+"status": "normal"
+},
+{
+"test_name": "C-Reactive Protein",
+"value": 0.5,
+"unit": "mg/L",
+"reference_range": "< 5.0",
+"status": "normal"
+},
+{
+"test_name": "Erythrocyte Sedimentation Rate",
+"value": 13.0,
+"unit": "mm/hr",
+"reference_range": "0-15",
+"status": "normal"
+}
+]
+}
+
+
+report_08.jpg
+{
+"tests": [
+{
+"test_name": "Total Cholesterol",
+"value": 155.0,
+"unit": "mg/dL",
+"reference_range": "< 200",
+"status": "normal"
+},
+{
+"test_name": "Triglycerides",
+"value": 106.0,
+"unit": "mg/dL",
+"reference_range": "< 150",
+"status": "normal"
+},
+{
+"test_name": "HDL Cholesterol",
+"value": 60.0,
+"unit": "mg/dL",
+"reference_range": "> 40",
+"status": "normal"
+},
+{
+"test_name": "LDL Cholesterol",
+"value": 73.0,
+"unit": "mg/dL",
+"reference_range": "< 100",
+"status": "normal"
+},
+{
+"test_name": "VLDL Cholesterol",
+"value": 23.0,
+"unit": "mg/dL",
+"reference_range": "< 30",
+"status": "normal"
+},
+{
+"test_name": "Total Cholesterol/HDL Ratio",
+"value": 4.3,
+"unit": "",
+"reference_range": "< 5.0",
+"status": "normal"
+}
+]
+}
+
+
+report_09.jpg
+{
+"tests": [
+{
+"test_name": "Hemoglobin",
+"value": 17.4,
+"unit": "g/dL",
+"reference_range": "13.0 - 17.0",
+"status": "high"
+},
+{
+"test_name": "Red Blood Cell Count",
+"value": 4.85,
+"unit": "mill/cumm",
+"reference_range": "4.50 - 5.50",
+"status": "normal"
+},
+{
+"test_name": "Hematocrit",
+"value": 47.7,
+"unit": "%",
+"reference_range": "40.0 - 50.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Volume",
+"value": 106.6,
+"unit": "fL",
+"reference_range": "83.0 - 101.0",
+"status": "high"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin",
+"value": 26.1,
+"unit": "pg",
+"reference_range": "27.0 - 32.0",
+"status": "low"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin Concentration",
+"value": 32.6,
+"unit": "g/dL",
+"reference_range": "31.5 - 34.5",
+"status": "normal"
+},
+{
+"test_name": "Red Cell Distribution Width",
+"value": 12.8,
+"unit": "%",
+"reference_range": "11.6 - 14.0",
+"status": "normal"
+},
+{
+"test_name": "White Blood Cell Count",
+"value": 4700.0,
+"unit": "/cumm",
+"reference_range": "4000 - 10000",
+"status": "normal"
+},
+{
+"test_name": "Neutrophils",
+"value": 52.0,
+"unit": "%",
+"reference_range": "40 - 80",
+"status": "normal"
+},
+{
+"test_name": "Lymphocytes",
+"value": 35.0,
+"unit": "%",
+"reference_range": "20 - 40",
+"status": "normal"
+},
+{
+"test_name": "Eosinophils",
+"value": 5.0,
+"unit": "%",
+"reference_range": "1 - 6",
+"status": "normal"
+},
+{
+"test_name": "Monocytes",
+"value": 4.0,
+"unit": "%",
+"reference_range": "2 - 10",
+"status": "normal"
+},
+{
+"test_name": "Basophils",
+"value": 2.0,
+"unit": "%",
+"reference_range": "0 - 2",
+"status": "normal"
+},
+{
+"test_name": "Platelet Count",
+"value": 229000.0,
+"unit": "/cumm",
+"reference_range": "1,50,000 - 4,10,000",
+"status": "normal"
+}
+]
+}
+
+
+report_09.jpg
+{
+"tests": [
+{
+"test_name": "Hemoglobin",
+"value": 17.4,
+"unit": "g/dL",
+"reference_range": "13.0 - 17.0",
+"status": "high"
+},
+{
+"test_name": "Red Blood Cell Count",
+"value": 4.85,
+"unit": "mill/cumm",
+"reference_range": "4.50 - 5.50",
+"status": "normal"
+},
+{
+"test_name": "Hematocrit",
+"value": 47.7,
+"unit": "%",
+"reference_range": "40.0 - 50.0",
+"status": "normal"
+},
+{
+"test_name": "Mean Corpuscular Volume",
+"value": 106.6,
+"unit": "fL",
+"reference_range": "83.0 - 101.0",
+"status": "high"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin",
+"value": 26.1,
+"unit": "pg",
+"reference_range": "27.0 - 32.0",
+"status": "low"
+},
+{
+"test_name": "Mean Corpuscular Hemoglobin Concentration",
+"value": 32.6,
+"unit": "g/dL",
+"reference_range": "31.5 - 34.5",
+"status": "normal"
+},
+{
+"test_name": "Red Cell Distribution Width",
+"value": 12.8,
+"unit": "%",
+"reference_range": "11.6 - 14.0",
+"status": "normal"
+},
+{
+"test_name": "White Blood Cell Count",
+"value": 4700.0,
+"unit": "/cumm",
+"reference_range": "4000 - 10000",
+"status": "normal"
+},
+{
+"test_name": "Neutrophils",
+"value": 52.0,
+"unit": "%",
+"reference_range": "40 - 80",
+"status": "normal"
+},
+{
+"test_name": "Lymphocytes",
+"value": 35.0,
+"unit": "%",
+"reference_range": "20 - 40",
+"status": "normal"
+},
+{
+"test_name": "Eosinophils",
+"value": 5.0,
+"unit": "%",
+"reference_range": "1 - 6",
+"status": "normal"
+},
+{
+"test_name": "Monocytes",
+"value": 4.0,
+"unit": "%",
+"reference_range": "2 - 10",
+"status": "normal"
+},
+{
+"test_name": "Basophils",
+"value": 2.0,
+"unit": "%",
+"reference_range": "0 - 2",
+"status": "normal"
+},
+{
+"test_name": "Platelet Count",
+"value": 229000.0,
+"unit": "/cumm",
+"reference_range": "1,50,000 - 4,10,000",
+"status": "normal"
+}
+]
+}

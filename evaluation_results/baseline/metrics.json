@@ -1,0 +1,214 @@
+{
+  "extractor": "baseline\\extract.py",
+  "model": "gemini-3.5-flash-lite",
+  "score_definition": "A row is correct only when test_name, value, unit and reference_range all match after harmless whitespace/numeric formatting normalization. Test-name synonyms are not merged.",
+  "reports_scored": 8,
+  "predicted_rows": 114,
+  "gold_rows": 138,
+  "exact_row_matches": 66,
+  "micro_precision": 0.5789473684210527,
+  "micro_recall": 0.4782608695652174,
+  "micro_f1": 0.5238095238095238,
+  "mean_latency_seconds": 3.526853699993808,
+  "total_latency_seconds": 28.214829599950463,
+  "total_paid_tier_cost_estimate_usd": 0.0176804,
+  "cost_estimates_available_for_reports": 8,
+  "per_report": {
+    "report_01": {
+      "predicted_rows": 14,
+      "gold_rows": 14,
+      "exact_row_matches": 13,
+      "row_precision": 0.9285714285714286,
+      "row_recall": 0.9285714285714286,
+      "row_f1": 0.9285714285714286,
+      "field_accuracy_by_position": {
+        "test_name": 1.0,
+        "value": 0.9285714285714286,
+        "unit": 1.0,
+        "reference_range": 1.0
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 2.565598300192505,
+      "usage_and_cost": {
+        "input_tokens": 702,
+        "output_tokens_including_thinking_if_reported": 668,
+        "paid_tier_cost_estimate_usd": 0.0018805999999999998,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_02": {
+      "predicted_rows": 16,
+      "gold_rows": 16,
+      "exact_row_matches": 10,
+      "row_precision": 0.625,
+      "row_recall": 0.625,
+      "row_f1": 0.625,
+      "field_accuracy_by_position": {
+        "test_name": 0.625,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 1.0
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 3.670738299842924,
+      "usage_and_cost": {
+        "input_tokens": 702,
+        "output_tokens_including_thinking_if_reported": 783,
+        "paid_tier_cost_estimate_usd": 0.0021681,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_03": {
+      "predicted_rows": 8,
+      "gold_rows": 8,
+      "exact_row_matches": 0,
+      "row_precision": 0.0,
+      "row_recall": 0.0,
+      "row_f1": 0.0,
+      "field_accuracy_by_position": {
+        "test_name": 0.0,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 0.625
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 2.8385415002703667,
+      "usage_and_cost": {
+        "input_tokens": 702,
+        "output_tokens_including_thinking_if_reported": 424,
+        "paid_tier_cost_estimate_usd": 0.0012706,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_05": {
+      "predicted_rows": 14,
+      "gold_rows": 14,
+      "exact_row_matches": 13,
+      "row_precision": 0.9285714285714286,
+      "row_recall": 0.9285714285714286,
+      "row_f1": 0.9285714285714286,
+      "field_accuracy_by_position": {
+        "test_name": 0.9285714285714286,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 1.0
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 3.6537278997711837,
+      "usage_and_cost": {
+        "input_tokens": 702,
+        "output_tokens_including_thinking_if_reported": 662,
+        "paid_tier_cost_estimate_usd": 0.0018655999999999998,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_06": {
+      "predicted_rows": 12,
+      "gold_rows": 12,
+      "exact_row_matches": 2,
+      "row_precision": 0.16666666666666666,
+      "row_recall": 0.16666666666666666,
+      "row_f1": 0.16666666666666666,
+      "field_accuracy_by_position": {
+        "test_name": 0.8333333333333334,
+        "value": 0.25,
+        "unit": 1.0,
+        "reference_range": 0.5833333333333334
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 3.244988000020385,
+      "usage_and_cost": {
+        "input_tokens": 702,
+        "output_tokens_including_thinking_if_reported": 497,
+        "paid_tier_cost_estimate_usd": 0.0014531,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_08": {
+      "predicted_rows": 6,
+      "gold_rows": 6,
+      "exact_row_matches": 0,
+      "row_precision": 0.0,
+      "row_recall": 0.0,
+      "row_f1": 0.0,
+      "field_accuracy_by_position": {
+        "test_name": 0.0,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 1.0
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 2.6544264000840485,
+      "usage_and_cost": {
+        "input_tokens": 1262,
+        "output_tokens_including_thinking_if_reported": 372,
+        "paid_tier_cost_estimate_usd": 0.0013085999999999998,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_09": {
+      "predicted_rows": 14,
+      "gold_rows": 14,
+      "exact_row_matches": 9,
+      "row_precision": 0.6428571428571429,
+      "row_recall": 0.6428571428571429,
+      "row_f1": 0.6428571428571429,
+      "field_accuracy_by_position": {
+        "test_name": 0.7142857142857143,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 0.9285714285714286
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 3.7155192997306585,
+      "usage_and_cost": {
+        "input_tokens": 1262,
+        "output_tokens_including_thinking_if_reported": 906,
+        "paid_tier_cost_estimate_usd": 0.0026436,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    },
+    "report_11": {
+      "predicted_rows": 30,
+      "gold_rows": 54,
+      "exact_row_matches": 19,
+      "row_precision": 0.6333333333333333,
+      "row_recall": 0.35185185185185186,
+      "row_f1": 0.4523809523809524,
+      "field_accuracy_by_position": {
+        "test_name": 0.6666666666666666,
+        "value": 1.0,
+        "unit": 1.0,
+        "reference_range": 0.9666666666666667
+      },
+      "exact_sequence_match": false,
+      "latency_seconds": 5.871289900038391,
+      "usage_and_cost": {
+        "input_tokens": 1234,
+        "output_tokens_including_thinking_if_reported": 1888,
+        "paid_tier_cost_estimate_usd": 0.0050902,
+        "pricing_model": "gemini-3.5-flash-lite",
+        "note": "Post-hoc estimate from aggregate prompt/output token counts. Not an invoice; free-tier usage may be $0 and PDF modality-level billing details were not retained.",
+        "pricing_basis": "Google standard paid-tier, USD per 1M tokens; rates checked 2026-10-26"
+      }
+    }
+  },
+  "cost_estimate_method": "Post-hoc estimate from saved aggregate token counts: (input_tokens * $0.30 + output_tokens * $2.50) / 1,000,000. Standard paid-tier rates for gemini-3.5-flash-lite checked 2026-10-26. See RESULTS.md for PDF modality and tier limitations.",
+  "total_input_tokens_reported": 7268,
+  "total_output_tokens_reported": 6200,
+  "pricing_source": "https://ai.google.dev/gemini-api/docs/pricing"
+}

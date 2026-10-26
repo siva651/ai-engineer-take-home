@@ -1,42 +1,75 @@
-# Lab report extraction: starter kit
+# mera.health AI Engineer take-home
 
-Read the brief first. This file only covers what's in the kit and how to run it.
+## What changed
 
-## Contents
+I kept the supplied command, `python extract.py <file>`, and made focused changes to extraction instructions and output handling. The improved prompt preserves printed test names and text values, separates units from reference ranges, uses only ranges printed in the report, and asks for results from every page.
 
-- `extract.py`: the baseline extractor.
-- `reports/`: 12 sample documents (`.pdf` and `.jpg`).
-- `gold/`: labels for 8 of the 12, named after the report they belong to.
-- `schema.json`: the output shape.
+## Before and after
 
-## Run it
+Both live API runs used `gemini-3.5-flash-lite` with low thinking and the same eight labelled reports (138 gold rows).
 
-Use Python 3.10 or newer and install Poppler, which provides `pdftoppm`:
+| Metric | Baseline | Improved |
+|---|---:|---:|
+| Exact rows | 66/138 | 137/138 |
+| Precision / recall / F1 | 57.9% / 47.8% / 52.4% | 99.3% / 99.3% / 99.3% |
+| Mean latency | 3.53 s | 3.35 s |
+| Estimated cost for 8 reports | $0.01768 | $0.01662 |
 
-- macOS: `brew install poppler`
-- Ubuntu/Debian: `sudo apt-get install poppler-utils`
+Cost is an estimate from reported aggregate token counts and standard paid-tier rates checked on 26 October 2026, not an invoice. Actual charges can differ; free-tier use may cost $0. The saved predictions and report-level metrics are in `evaluation_results/`.
 
-The supplied Gemini setup is one starting point. You can use free credits or adapt the starter to an accessible provider or a local open model; paid access is not required. If you change the model/provider to get started, measure the baseline with that setup before changing its extraction behavior, and document the substitution.
+## Run on Windows (PowerShell)
 
-There are no Python package dependencies for the supplied setup. From this folder:
+Requires Python 3.10+ and a Gemini API key. No `pip install`, virtual environment, or Poppler is needed. First unzip the project and open PowerShell in the `mera-health-minimal` folder (the folder containing `extract.py`).
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pdftoppm -v
-python -c 'import getpass, os, subprocess, sys; env = os.environ.copy(); env["GEMINI_API_KEY"] = getpass.getpass("Gemini API key: "); sys.exit(subprocess.call([sys.executable, "extract.py", "reports/report_01.pdf"], env=env))'
+### 1. Set your API key (one time)
+
+Run these commands in PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+notepad .env
 ```
 
-The last command securely prompts for your key and runs one extraction as a setup smoke test. It makes an API call, which may incur charges depending on your account, and should print JSON containing a `tests` array. It does not save the key or put it in shell history. For repeated calls, set `GEMINI_API_KEY` through your usual local secret/environment setup; do not commit it.
+In Notepad, replace `replace_with_your_key` with your Gemini API key on the `GEMINI_API_KEY=` line, save, and close the file. Keep `.env` private; never submit it or your API key.
 
-The default model is `gemini-3.8-flash`. Google's [pricing page](https://ai.google.dev/gemini-api/docs/pricing) currently lists free-tier input and output for this model (checked 8 October 2026). You can start with a free-tier project and an API key from [Google AI Studio](https://aistudio.google.com/apikey). Check your project's [active rate limits](https://ai.google.dev/gemini-api/docs/rate-limits): quotas apply per project, and access and limits may change. A key on a paid project can incur charges. If access or quota is insufficient, use another model or provider and document your setup.
+### 2. Extract a report
 
-The baseline calls the Gemini REST API. You're free to change model (`GEMINI_MODEL`) or provider; record the exact choice with your measurements. Whatever you change, this must keep working and keep printing schema-valid JSON to stdout, because it's how we'll run your version on reports you haven't seen:
+Run:
 
-```bash
-python extract.py <path-to-report>
+```powershell
+python extract.py reports/report_01.pdf --output manual_outputs/report_01.json
 ```
 
-If your version needs different setup (other packages, other environment variables), say so at the top of your README.
+The extracted JSON is printed in the terminal and saved to `manual_outputs/report_01.json`. Replace the input path with another PDF or supported JPG/PNG image to process a different report.
 
-For setup errors: a missing `pdftoppm` means Poppler is not on `PATH`; HTTP 401/403 means check key/project access, 404 means check model availability, and 429 means check quota. For a connection/TLS error, check network access before retrying. Never disable TLS verification. Keep access troubleshooting within the timebox; document constraints and any alternative you use.
+### Optional: rerun the baseline-versus-improved benchmark
+
+```powershell
+python evaluate.py --compare
+```
+
+This makes about 16 API requests (eight reports per version, excluding retries) and writes fresh predictions to `eval_runs/baseline/` and `eval_runs/final/`. The included results can be reviewed without spending API quota again.
+
+### Optional: run local code checks
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+These checks use Python's built-in test runner and do not call Gemini.
+
+## Main failure categories
+
+- **Names and textual values:** baseline scored 0/8 strict rows on `report_03` and 0/6 on `report_08`. Rewriting printed labels or forcing values to numbers can break exact matches; the improved prompt preserves source text.
+- **Unit/range confusion:** baseline scored 2/12 on `report_06`; the improved extractor scored 12/12 after unit and reference-range instructions were clarified.
+- **Incomplete page coverage:** baseline returned 30/54 rows from two-page `report_11`; the improved version returned and matched all 54.
+
+The only final strict-row mismatch is likely a supplied gold-label error: `report_01.pdf` prints Platelet Count `340000`, while its gold file says `304000`. I left the employer's gold label unchanged, so the official score remains 137/138. `report_04`, `report_07`, `report_10`, and `report_12` have no gold labels; no accuracy score is claimed for them.
+
+## Earlier prompt experiment and decisions
+
+The separate manual chat experiment in `evaluation_results/manual_prompt_experiment/` improved exact rows from 23/84 (27.4%) to 75/84 (89.3%), but reference-range accuracy slipped from 80/84 (95.2%) to 79/84 (94.0%). Its exports duplicate `report_09` and omit `report_11`, so these are supplementary results, not the live API benchmark.
+
+**RAG:** not the first fix; retrieved standard ranges could introduce values absent from the report. **Fine-tuning:** eight labelled reports are too few, and one label appears incorrect. **Multi-step agent:** not yet; one request is simpler to measure, cheaper, and easier to debug.
+
+**Decision log:** I prioritized source fidelity over normalizing names or inventing ranges, kept the gold files unchanged, and checked the platelet discrepancy against the source PDF. The baseline comparison is not a perfect input-controlled experiment: the original starter used Poppler to render page one, while this no-install adapter sends PDF bytes and tells the model to inspect page one only. `PLAN.md` and `PROMPTS.md` record the plan and actual prompt text. The supplied ZIP does not contain Git metadata or agent transcripts; preserve genuine history/transcripts if you have them, and do not fabricate either.

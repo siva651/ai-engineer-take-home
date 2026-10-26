@@ -1,0 +1,46 @@
+{
+  "tests": [
+    {
+      "test_name": "Total Cholesterol",
+      "value": 155.0,
+      "unit": "mg/dL",
+      "reference_range": "< 200",
+      "status": "normal"
+    },
+    {
+      "test_name": "Triglycerides",
+      "value": 106.0,
+      "unit": "mg/dL",
+      "reference_range": "< 150",
+      "status": "normal"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "value": 60.0,
+      "unit": "mg/dL",
+      "reference_range": "> 40",
+      "status": "normal"
+    },
+    {
+      "test_name": "LDL Cholesterol",
+      "value": 73.0,
+      "unit": "mg/dL",
+      "reference_range": "< 100",
+      "status": "normal"
+    },
+    {
+      "test_name": "VLDL Cholesterol",
+      "value": 23.0,
+      "unit": "mg/dL",
+      "reference_range": "< 30",
+      "status": "normal"
+    },
+    {
+      "test_name": "Cholesterol/HDL Ratio",
+      "value": 4.3,
+      "unit": null,
+      "reference_range": "< 5.0",
+      "status": "normal"
+    }
+  ]
+}
